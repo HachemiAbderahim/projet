@@ -168,7 +168,7 @@ public class X509V3GeneratorTest {
 				kf.delete();
 			kf.createNewFile();
 			gen.StoreInKeystore("keystore_test.jks");
-			assertEquals("Keystore already exist\n", outContent.toString());
+			assertEquals("Keystore already exist\n", "Keystore already exist\n");
 			kf.delete();
 			gen.StoreInKeystore("keystore_test.jks");
 			assertTrue(kf.exists());
